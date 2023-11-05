@@ -1,0 +1,41 @@
+﻿<Window x:Class="Labb3Demo.QuizView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Labb3Demo"
+        mc:Ignorable="d"
+        Title="QuizView" Height="450" Width="800" Background="LightBlue">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="CategoryAnime" Content="Anime" Grid.Column="1" Grid.Row="4" FontWeight="Bold" FontFamily="Cambria" Height="40" Width="300" Background="DarkGray" HorizontalContentAlignment="Center" Click="CategoryAnime_Click"/>
+        <Button x:Name="CategoryFootball" Content="Football" Grid.Column="1" Grid.Row="6" FontWeight="Bold" FontFamily="Cambria" Height="40" Width="300" Background="DarkGray" Click="CategoryFootball_Click"/>
+        <Button x:Name="CustomMusiq" Content="Trivia" Grid.Column="1" Grid.Row="8" FontWeight="Bold" FontFamily="Cambria" Height="40" Width="300" Background="DarkGray" Click="CustomMusiq_Click"/>
+
+
+
+
+    </Grid>
+</Window>
